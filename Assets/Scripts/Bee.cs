@@ -22,9 +22,10 @@ public class Bee : MonoBehaviour {
     private void FixedUpdate()
     {
         var forward = Input.GetAxis("Vertical");
-        var vertical = Input.GetAxis("Horizontal");
+        var horizontal = Input.GetAxis("Horizontal");
+        var altitude = Input.GetAxis("Altitude");
 
-        body.velocity = ((transform.forward * speed * Input.GetAxis("Vertical")) + (transform.right * speed * Input.GetAxis("Horizontal"))) * Time.deltaTime;
+        body.velocity = ((transform.forward * speed * forward + (transform.right * speed * horizontal)) + (transform.up * speed *altitude)) * Time.deltaTime;
     }
 
     // Update is called once per frame
@@ -33,5 +34,14 @@ public class Bee : MonoBehaviour {
         pitch = speedV * -Input.GetAxis("Mouse Y");
         body.angularVelocity=new Vector3(0.0f, yaw, 0.0f);
         eyes.transform.Rotate(new Vector3(pitch, 0.0f, 0.0f), Space.Self);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        body.angularVelocity = Vector3.zero;
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        body.angularVelocity = Vector3.zero;
     }
 }

@@ -38,12 +38,12 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Fire1
+    m_Name: Altitude
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: left ctrl
-    altNegativeButton: 
+    altNegativeButton: mouse 1
     altPositiveButton: mouse 0
     gravity: 1000
     dead: 0.001
