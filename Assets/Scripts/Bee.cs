@@ -16,6 +16,7 @@ public class Bee : MonoBehaviour {
 	void Start () {
         body = GetComponent<Rigidbody>();
         eyes = GetComponentInChildren<Camera>().gameObject;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void FixedUpdate()
@@ -23,7 +24,7 @@ public class Bee : MonoBehaviour {
         var forward = Input.GetAxis("Vertical");
         var vertical = Input.GetAxis("Horizontal");
 
-        body.velocity = ((Vector3.forward * forward) + (Vector3.right * vertical)) * speed * Time.deltaTime;
+        body.velocity = ((transform.forward * speed * Input.GetAxis("Vertical")) + (transform.right * speed * Input.GetAxis("Horizontal"))) * Time.deltaTime;
     }
 
     // Update is called once per frame
