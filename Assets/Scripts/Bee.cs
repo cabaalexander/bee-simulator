@@ -35,13 +35,4 @@ public class Bee : MonoBehaviour {
         body.angularVelocity=new Vector3(0.0f, yaw, 0.0f);
         eyes.transform.Rotate(new Vector3(pitch, 0.0f, 0.0f), Space.Self);
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        body.angularVelocity = Vector3.zero;
-    }
-    private void OnCollisionStay(Collision collision)
-    {
-        body.angularVelocity = Vector3.zero;
-    }
 }
