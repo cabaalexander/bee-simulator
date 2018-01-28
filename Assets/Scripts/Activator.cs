@@ -17,9 +17,8 @@ public class Activator : MonoBehaviour {
         if (active) {
             if (h < 0 && noteKey == "a" || h > 0 && noteKey == "d" || v < 0 && noteKey == "s" || v > 0 && noteKey == "w")
             {
-                PlaySongGameManager.Instance.songScore++;
+                PlaySongGameManager.songScore++;
                 Destroy(note);
-                Debug.Log("Klk");
             }
         }
 

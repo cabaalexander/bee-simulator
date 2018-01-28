@@ -28,8 +28,8 @@ public class NoteRespawner : MonoBehaviour {
 
     void SpawnNote ()
     {
-        int randomNumber = Mathf.RoundToInt(Random.Range(0.0f, PlaySongGameManager.Instance.availableDanceKeys.Count - 1));
-        string currentKey = PlaySongGameManager.Instance.availableDanceKeys[randomNumber];
+        int randomNumber = Mathf.RoundToInt(Random.Range(0.0f, PlaySongGameManager.availableDanceKeys.Count - 1));
+        string currentKey = PlaySongGameManager.availableDanceKeys[randomNumber];
         Vector2 clonePosition = new Vector2(transform.position.x, 0);
         GameObject clone = Instantiate(notePrefab, clonePosition, Quaternion.identity);
 

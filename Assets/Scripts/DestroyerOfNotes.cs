@@ -10,7 +10,7 @@ public class DestroyerOfNotes : MonoBehaviour {
         if (collision.gameObject.tag == "Note")
         {
             Destroy(collision.gameObject);
-            PlaySongGameManager.Instance.songScore--;
+            PlaySongGameManager.songScore--;
         }
     }
 }

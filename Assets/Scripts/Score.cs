@@ -7,7 +7,7 @@ public class Score : MonoBehaviour {
     public int score;
 
 	void Update () {
-        score = PlaySongGameManager.Instance.songScore;
+        score = PlaySongGameManager.songScore;
 	}
 	
 	
