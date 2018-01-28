@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Bee : MonoBehaviour
 {
@@ -53,6 +54,10 @@ public class Bee : MonoBehaviour
         if (LayerMask.NameToLayer("Flower") == other.gameObject.layer)
         {
             other.GetComponent<Flower>().GotPollen();
+        }
+        if (LayerMask.NameToLayer("Enemy") == other.gameObject.layer)
+        {
+            SceneManager.LoadScene("Death");
         }
     }
 }
