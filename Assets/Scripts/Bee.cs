@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bee : MonoBehaviour {
+public class Bee : MonoBehaviour
+{
 
     public float speed;
     public float speedH;
@@ -13,8 +14,9 @@ public class Bee : MonoBehaviour {
     GameObject model;
     Animator animator;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         body = GetComponent<Rigidbody>();
         eyes = GetComponentInChildren<Camera>().gameObject;
         model = transform.Find("Abeja").gameObject;
@@ -25,7 +27,7 @@ public class Bee : MonoBehaviour {
 
     bool IsGrounded()
     {
-        return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
+        return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.01f);
     }
 
     private void FixedUpdate()
@@ -34,14 +36,23 @@ public class Bee : MonoBehaviour {
         var horizontal = Input.GetAxis("Horizontal");
         var altitude = Input.GetAxis("Mouse Y");
 
-        body.velocity = ((transform.forward * speed * forward + (transform.right * speed * horizontal)) + (transform.up * speed *altitude)) * Time.deltaTime;
+        body.velocity = ((transform.forward * speed * forward + (transform.right * speed * horizontal)) + (transform.up * speed * altitude)) * Time.deltaTime;
         animator.SetBool("Grounded", IsGrounded());
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         var yaw = speedH * Input.GetAxis("Mouse X");
-     
-        body.angularVelocity=new Vector3(0.0f, yaw, 0.0f);
+
+        body.angularVelocity = new Vector3(0.0f, yaw, 0.0f);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (LayerMask.NameToLayer("Flower") == other.gameObject.layer)
+        {
+            other.GetComponent<Flower>().GotPollen();
+        }
     }
 }

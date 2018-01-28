@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4315337027159830}
   - component: {fileID: 33374751801622802}
   - component: {fileID: 23813187890538420}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 33053156883585648}
   - component: {fileID: 23693175966133692}
   - component: {fileID: 64775060536237288}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Plane_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4290499096612678}
   - component: {fileID: 65564427986192382}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BoxColider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4547666292382942}
   - component: {fileID: 33257338393695270}
   - component: {fileID: 23055497181674082}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BerjaLeft_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4593054994614484}
   - component: {fileID: 95479305032988092}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4908186743584466}
   - component: {fileID: 65385146417120662}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BoxColider (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 4391900843480390}
   - component: {fileID: 33465407155614756}
   - component: {fileID: 23534866051304468}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Plane_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 33686796007055428}
   - component: {fileID: 23961555521795156}
   - component: {fileID: 64815501613659920}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4897426851512282}
   - component: {fileID: 65230554976198544}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BoxColider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4282528720069776}
   - component: {fileID: 65478241234982560}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BoxColider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 4278570000418060}
   - component: {fileID: 33816404927847472}
   - component: {fileID: 23069037735681938}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BerjaRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4659564051826074}
   - component: {fileID: 65237890388813706}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BoxColider (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 4145329297376226}
   - component: {fileID: 33574355197814226}
   - component: {fileID: 23490364912642616}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BerjaLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 4637103070993768}
   - component: {fileID: 33048179754034574}
   - component: {fileID: 23135946949301458}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BerjaLeft_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 33661984042657704}
   - component: {fileID: 23171721670265274}
   - component: {fileID: 64165779190415702}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 33240731448257412}
   - component: {fileID: 23219348867972328}
   - component: {fileID: 64519881026691648}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4749798851914134}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FenceBoxCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

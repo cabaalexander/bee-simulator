@@ -29,9 +29,9 @@ public class NoteRespawner : MonoBehaviour {
 
     void SpawnNote ()
     {
-        int randomNumber = Mathf.RoundToInt(Random.Range(0.0f, PlaySongGameManager.Instance.availableDanceKeys.Count - 1));
-        var notes = PlaySongGameManager.Instance.availableDanceKeys.Keys.ToList();
-        var rotationZValue = PlaySongGameManager.Instance.availableDanceKeys.Values.ToList();
+        int randomNumber = Mathf.RoundToInt(Random.Range(0.0f, PlaySongGameManager.availableDanceKeys.Count - 1));
+        var notes = PlaySongGameManager.availableDanceKeys.Keys.ToList();
+        var rotationZValue = PlaySongGameManager.availableDanceKeys.Values.ToList();
        
         string currentKey = notes[randomNumber];
         float currentRotationZValue = rotationZValue[randomNumber];
