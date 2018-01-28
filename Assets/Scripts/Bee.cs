@@ -59,5 +59,9 @@ public class Bee : MonoBehaviour
         {
             SceneManager.LoadScene("Death");
         }
+        if (LayerMask.NameToLayer("Hive") == other.gameObject.layer)
+        {
+            SceneManager.LoadScene("DanceFloor");
+        }
     }
 }

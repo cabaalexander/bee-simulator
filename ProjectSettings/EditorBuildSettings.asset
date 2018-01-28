@@ -8,3 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Level1.unity
     guid: 2e718a1b557aa294b8613d62334ced3a
+  - enabled: 1
+    path: Assets/Scene/DanceFloor.unity
+    guid: f2c368c718499b94796a9f0afc60a941
+  - enabled: 1
+    path: Assets/Scene/Death.unity
+    guid: b72d96c353eab264ebbe74107984389b
+  - enabled: 1
+    path: Assets/Scene/Win.unity
+    guid: 106efce6b68ec954cba6ece81a04d085

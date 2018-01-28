@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class NoteRespawner : MonoBehaviour {
 
@@ -16,6 +17,8 @@ public class NoteRespawner : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        var score=PlaySongGameManager.songScore;
+        stopAfter=(score*3)+3;
         StartCoroutine("SpawnNoteCoroutine");
 	}
 
@@ -24,7 +27,13 @@ public class NoteRespawner : MonoBehaviour {
         if (spawnCount == stopAfter)
         {
             StopCoroutine("SpawnNoteCoroutine");
+            Invoke("ChangeScene", 2);         
         }
+    }
+
+    public void ChangeScene()
+    {
+        SceneManager.LoadScene("Win");
     }
 
     void SpawnNote ()
