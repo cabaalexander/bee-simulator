@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlaySongGameManager : MonoBehaviour {
 
     private static PlaySongGameManager instance = null;
-    
-    public List<string> availableDanceKeys = new List<string> { "w", "a", "s", "d" };
+
+    public Dictionary<string, float> availableDanceKeys = new Dictionary<string, float> {
+        { "w", 270 }, { "a", 0 }, { "s", 90 }, { "d", 180 }
+    };
     public int songScore = 0;
 
     public static PlaySongGameManager Instance

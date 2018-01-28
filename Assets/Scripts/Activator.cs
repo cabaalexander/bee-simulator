@@ -19,14 +19,8 @@ public class Activator : MonoBehaviour {
             {
                 PlaySongGameManager.Instance.songScore++;
                 Destroy(note);
-                Debug.Log("Klk");
             }
         }
-
-        //if (Input.GetButtonDown("Fire2") && active)
-        //{
-            //Destroy(note);
-        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
