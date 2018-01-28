@@ -21,11 +21,6 @@ public class Activator : MonoBehaviour {
                 Destroy(note);
             }
         }
-
-        //if (Input.GetButtonDown("Fire2") && active)
-        //{
-            //Destroy(note);
-        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

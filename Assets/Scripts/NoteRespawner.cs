@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class NoteRespawner : MonoBehaviour {
 
@@ -29,9 +30,14 @@ public class NoteRespawner : MonoBehaviour {
     void SpawnNote ()
     {
         int randomNumber = Mathf.RoundToInt(Random.Range(0.0f, PlaySongGameManager.availableDanceKeys.Count - 1));
-        string currentKey = PlaySongGameManager.availableDanceKeys[randomNumber];
-        Vector2 clonePosition = new Vector2(transform.position.x, 0);
-        GameObject clone = Instantiate(notePrefab, clonePosition, Quaternion.identity);
+        var notes = PlaySongGameManager.availableDanceKeys.Keys.ToList();
+        var rotationZValue = PlaySongGameManager.availableDanceKeys.Values.ToList();
+       
+        string currentKey = notes[randomNumber];
+        float currentRotationZValue = rotationZValue[randomNumber];
+        Vector3 clonePosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        Quaternion cloneRotation =  Quaternion.Euler(new Vector3(0, 0, currentRotationZValue));
+        GameObject clone = Instantiate(notePrefab, clonePosition, cloneRotation);
 
         clone.gameObject.GetComponent<TransformX2D>().speed = speed;
         clone.gameObject.GetComponent<TransformX2D>().left = spawnLeft;

@@ -51,9 +51,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0592264501f7a746bdbb292c70abdcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableDanceKeys:
-  - w
-  - a
-  - s
-  - d
   songScore: 0
