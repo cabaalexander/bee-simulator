@@ -14,8 +14,11 @@ public class Flower : MonoBehaviour
 
     public void GotPollen()
     {
-        hasPollen = false;
-        pollen.SetActive(false);
-        PlaySongGameManager.songScore+=setScore;
+        if (hasPollen)
+        {
+            hasPollen = false;
+            pollen.SetActive(false);
+            PlaySongGameManager.songScore += setScore;
+        }
     }
 }
